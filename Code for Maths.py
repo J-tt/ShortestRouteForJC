@@ -1,6 +1,4 @@
-"""Main Code For Shortest Route"""
-import fuckit
-import tkinter as tk
+#Main Code For Shortest Route
 import subprocess
 
 
