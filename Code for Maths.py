@@ -1,9 +1,7 @@
-#Main Code For Shortest Route
+#MAIN CODE FOR SHORTES ROUTE
 import subprocess
 
-
-
-
+answer = "null"
 
 #CODE BY http://geekly-yours.blogspot.com.au/2014/03/dijkstra-algorithm-python-example-source-code-shortest-path.html
 
@@ -24,7 +22,8 @@ def dijkstra(graph,src,dest,visited=[],distances={},predecessors={}):
         while pred != None:
             path.append(pred)
             pred=predecessors.get(pred,None)
-        print('shortest path: '+str(path)+" cost="+str(distances[dest])) 
+        global answer
+        answer = 'shortest path: '+str(path)+"Distance: "+str(distances[dest])+"m"
     else :     
         # if it is the initial  run, initializes the cost
         if not visited: 
@@ -50,13 +49,35 @@ def dijkstra(graph,src,dest,visited=[],distances={},predecessors={}):
 
 #END CODE BY GEEKLY
 
-print('You are at A1, you can go to: A2, A3 or A4')
-end = input('Which one do you choose: ')
+#Imports Graph.txt (will contain graph data)
+file = open('graph.txt', 'r')
+graph = {'A1': {'A2': 10, 'A20': 41, 'A24': 33.5},
+    'A2': {'A1': 10, 'A7': 59.25},
+    'A7': {'A2': 59.25, 'A14': 47, 'A8': 15},
+    'A8': {'A9': 4.75, 'A7': 15},
+    'A9': {'A10': 7, 'A9': 4.75},
+    'A10': {'A11': 26.25, 'A9': 7, 'A36': 31},
+    'A11': {'A12': 7, 'A10': 29.25},
+    'A12': {'A37': 23.50, 'A13': 14, 'A11': 7},
+    'A13': {'A12': 14, 'A14': 11.25},
+    'A14': {'A7': 47, 'A15': 9.75},
+    'A15': {'A14': 9.75, 'A16': 10},
+    'A16': {'A17': 10, 'A15': 10},
+    'A17': {'A16': 10, 'A18': 10},
+    'A18': {'A17': 10, 'A19': 16.75, 'A43': 21.75, 'A2': 49.75},
+    'A19': {'A18': 17, 'A20': 10},
+    'A20': {'A19': 10, 'A22': 20},
+    'A22': {'A20': 20},
+    'A23': {'A24': 2.75, 'A47': 41},
+    'A24': {'A25': 17, 'A23': 2.75},
+    'A25': {'A26': 10, 'A24': 17},
+    'A26': {'A27': 10, 'A25': 10},
+    'A27': {'A25': 10, 'A28': 10},
+    'A28': {'A27': 10, 'A30': 20},
+    'A30': {'A28': 20}}
 
-#SAMPLE DATA
-graph = {'A1': {'A2': 2, 'A3': 2, 'A4': 4},
-    'A2': {'A1': 2, 'A4': 2},
-    'A3': {'A1': 2, 'A4': 1},
-    'A4': {'A2': 2, 'A3': 1}}
 
-dijkstra(graph, end, 'A1')
+#Runs dijkstra function (which prints data)
+dijkstra(graph, 'A12', 'A22')
+
+print answer
