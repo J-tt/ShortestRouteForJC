@@ -50,8 +50,8 @@ def dijkstra(graph,src,dest,visited=[],distances={},predecessors={}):
 #END CODE BY GEEKLY
 
 #Get start and finish
-start = input("Start Location: ")
-end = input("End Location: ")
+start = raw_input("Start Location: ")
+end = raw_input("End Location: ")
 
 #Imports Graph.txt (will contain graph data)
 file = open('graph.txt', 'r')
