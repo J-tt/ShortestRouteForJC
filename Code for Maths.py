@@ -51,8 +51,7 @@ def dijkstra(graph,src,dest,visited=[],distances={},predecessors={}):
 start = raw_input("Start Location: ")
 end = raw_input("End Location: ")
 
-#Imports Graph.txt (will contain graph data)
-file = open('graph.txt', 'r')
+#Graph:
 graph = {'A1': {'A2': 10, 'A20': 41, 'A24': 33.5},
     'A2': {'A1': 10, 'A7': 59.25},
     'A7': {'A2': 59.25, 'A14': 47, 'A8': 15},
