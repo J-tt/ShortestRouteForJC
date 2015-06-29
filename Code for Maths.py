@@ -3,7 +3,6 @@ import subprocess
 
 answer = "null"
 
-#CODE BY http://geekly-yours.blogspot.com.au/2014/03/dijkstra-algorithm-python-example-source-code-shortest-path.html
 
 
 def dijkstra(graph,src,dest,visited=[],distances={},predecessors={}):
@@ -47,7 +46,6 @@ def dijkstra(graph,src,dest,visited=[],distances={},predecessors={}):
         x=min(unvisited, key=unvisited.get)
         dijkstra(graph,x,dest,visited,distances,predecessors)
 
-#END CODE BY GEEKLY
 
 #Get start and finish
 start = raw_input("Start Location: ")
