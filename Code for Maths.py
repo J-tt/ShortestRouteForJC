@@ -49,6 +49,10 @@ def dijkstra(graph,src,dest,visited=[],distances={},predecessors={}):
 
 #END CODE BY GEEKLY
 
+#Get start and finish
+start = input("Start Location: ")
+end = input("End Location: ")
+
 #Imports Graph.txt (will contain graph data)
 file = open('graph.txt', 'r')
 graph = {'A1': {'A2': 10, 'A20': 41, 'A24': 33.5},
@@ -78,6 +82,6 @@ graph = {'A1': {'A2': 10, 'A20': 41, 'A24': 33.5},
 
 
 #Runs dijkstra function (which prints data)
-dijkstra(graph, 'A12', 'A22')
+dijkstra(graph, end, start)
 
 print answer
