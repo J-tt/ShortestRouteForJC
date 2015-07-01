@@ -11,7 +11,7 @@ Project for maths task. Creates the shortest route around John Curtin Campus imp
 [Added functionality for graphs](http://geekly-yours.blogspot.com.au/2014/03/dijkstra-algorithm-python-example-source-code-shortest-path.html "Article by geekly-yours on graphs")
 
 # Downloads
-**for the poeople who don't know where to start (you know who you are)**
+**for people who don't know where to start (you know who you are)**
 
 Links Will **Download**
 
