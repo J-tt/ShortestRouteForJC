@@ -1,15 +1,14 @@
 # ShortestRouteForJC
-Project for maths task. Creates the shortest route around John Curtin Campus implemented using Dijkstra's algorithm. And written in python.
+Project for maths task. Creates the shortest route around John Curtin Campus implemented using [Dijkstra's algorithm](https://github.com/J-tt/ShortestRouteForJC/wiki/Dijkstra's-Algorithm). And written in [Python 2.7.10](https://github.com/J-tt/ShortestRouteForJC/wiki/Python-2.7).
 
 # Currently in open Alpha
 
 
 # Sources
 
-[Initial source for graphs](https://www.python.org/doc/essays/graphs/ "Link")
+[Initial source for graphs](https://www.python.org/doc/essays/graphs/ "Python Graphs")
 
-[Added functionality for graphs](http://geekly-yours.blogspot.com.au/2014/03/dijkstra-algorithm-python-example-source-code-shortest-path.html "Why are you reading this?")
-
+[Added functionality for graphs](http://geekly-yours.blogspot.com.au/2014/03/dijkstra-algorithm-python-example-source-code-shortest-path.html "Article by geekly-yours on graphs")
 
 # Downloads
 **for the poeople who don't know where to start (you know who you are)**
@@ -20,6 +19,5 @@ Links Will **Download**
 
 [PyGame](http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi)
 
-# More information:
+# [More information](https://github.com/J-tt/ShortestRouteForJC/wiki)
 
-[WIKI LINK]
