@@ -2,6 +2,9 @@
 Project for maths task. Creates the shortest route around John Curtin Campus implemented using [Dijkstra's algorithm](https://github.com/J-tt/ShortestRouteForJC/wiki/Dijkstra's-Algorithm). And written in [Python 2.7.10](https://github.com/J-tt/ShortestRouteForJC/wiki/Python-2.7).
 
 # Currently in open Alpha
+[Download Alpha 1.2 for Windows](http://ge.tt/api/1/files/6Yv0wcJ2/0/blob?download)
+
+Currently there is no Mac equivelant :(
 
 
 # Sources
