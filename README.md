@@ -1,3 +1,5 @@
+# This was made when I was quite young and not experienced with Python, it's here for legacy's sake.
+
 # ShortestRouteForJC
 Project for maths task. Creates the shortest route around John Curtin Campus implemented using [Dijkstra's algorithm](https://github.com/J-tt/ShortestRouteForJC/wiki/Dijkstra's-Algorithm). And written in [Python 2.7.10](https://github.com/J-tt/ShortestRouteForJC/wiki/Python-2.7).
 
